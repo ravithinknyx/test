@@ -12,7 +12,7 @@ provider "aws" {
   region = "${var.region}"
 }
 
-# Create VPC
+# Create VPC for PUBLIC REPO
 resource "aws_vpc" "test_vpc" {
   cidr_block = "${var.cidr_vpc}"
   tags = {
