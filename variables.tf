@@ -1,4 +1,4 @@
-# DEFAULT REGION
+# DEFAULT REGION US_EAST
 variable "region" {
 default = "us-east-2"
 }
