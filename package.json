@@ -1,7 +1,19 @@
 {
   "name": "test",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
-    "semantic-release": "^19.0.3"
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "husky": "^8.0.1",
+    "semantic-release": "^19.0.3",
+    "standard-version": "^9.5.0"
+  },
+  "scripts": {
+    "prepare": "husky install",
+    "test": "node --version",
+    "release": "standard-version",
+    "release:minor": "standard-version --release-as minor",
+    "release:patch": "standard-version --release-as patch",
+    "release:major": "standard-version --release-as major"
   }
 }

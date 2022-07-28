@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.1](https://github.com/ravithinknyx/test/compare/v0.1.0...v0.1.1) (2022-07-28)
+
+
+### Features
+
+* test release ([6079d88](https://github.com/ravithinknyx/test/commit/6079d88e193c2e65ae31871144f0dd80c82fcc06))
+
 ## 0.1.0 (2022-07-28)
 
 
