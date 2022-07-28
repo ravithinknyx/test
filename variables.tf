@@ -1,6 +1,7 @@
 variable "region" {
 default = "us-east-2"
 }
+#CIDR for public vpc fix
 
 variable "cidr_vpc" {
 default = "9.0.0.0/16"

@@ -27,7 +27,7 @@ resource "aws_internet_gateway" "test_igw" {
     Name = "${var.igw_name}"
   }
 }
-
+# Add route table
 # Create custom route table
 resource "aws_route_table" "test_route_table" {
   vpc_id = aws_vpc.test_vpc.id
