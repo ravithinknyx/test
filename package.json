@@ -1,0 +1,7 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "devDependencies": {
+    "semantic-release": "^19.0.3"
+  }
+}
