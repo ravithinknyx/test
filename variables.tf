@@ -2,7 +2,7 @@
 variable "region" {
 default = "us-east-2"
 }
-#CIDR for public vpc fix 
+#CIDR for public vpc for Angad 
 
 variable "cidr_vpc" {
 default = "9.0.0.0/16"
