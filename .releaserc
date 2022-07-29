@@ -13,7 +13,7 @@ plugins:
     - npmPublish: false
   - - "@semantic-release/git"
     - assets:
-    - package.json
-    - package-lock.json
-    - CHANGELOG.md
+      - package.json
+      - package-lock.json
+      - CHANGELOG.md
   - "@semantic-release/github"
