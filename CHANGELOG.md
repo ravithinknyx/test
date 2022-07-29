@@ -1,3 +1,10 @@
+# [4.0.0-develop.3](https://github.com/ravithinknyx/test/compare/v4.0.0-develop.2...v4.0.0-develop.3) (2022-07-29)
+
+
+### Features
+
+* Added npm publish for npm test2 ([ae6414b](https://github.com/ravithinknyx/test/commit/ae6414b08175e40b3b622c03533fa9e85120a7f6))
+
 # [4.0.0-develop.2](https://github.com/ravithinknyx/test/compare/v4.0.0-develop.1...v4.0.0-develop.2) (2022-07-29)
 
 
