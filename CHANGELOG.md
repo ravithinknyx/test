@@ -1,3 +1,10 @@
+# [1.0.0-develop.11](https://github.com/ravithinknyx/test/compare/v1.0.0-develop.10...v1.0.0-develop.11) (2022-07-29)
+
+
+### Features
+
+* test changelog4 ([1853541](https://github.com/ravithinknyx/test/commit/185354165faac1af0c2377d3c46ce60c7551bb98))
+
 # [1.0.0-develop.10](https://github.com/ravithinknyx/test/compare/v1.0.0-develop.9...v1.0.0-develop.10) (2022-07-29)
 
 
