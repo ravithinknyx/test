@@ -1,4 +1,10 @@
 
+### Features
+
+* added metatdata for variables for release ([eece42e](https://github.com/ravithinknyx/test/commit/eece42ea322a7df5ec6ade3621601914107c67f6))
+
+# [1.0.0-develop.12](https://github.com/ravithinknyx/test/compare/v1.0.0-develop.11...v1.0.0-develop.12) (2022-07-29)
+
 ### Bug Fixes
 
 * added metatdata for variables for release ([6814f6f](https://github.com/ravithinknyx/test/commit/6814f6f3e674549fda473174639c2f47d641ac0f))
