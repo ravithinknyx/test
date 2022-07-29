@@ -1,3 +1,61 @@
+# [4.0.0-develop.2](https://github.com/ravithinknyx/test/compare/v4.0.0-develop.1...v4.0.0-develop.2) (2022-07-29)
+
+
+* TEST BREAKING RELEASE (#12) (#13) ([840fcc4](https://github.com/ravithinknyx/test/commit/840fcc48883b1317caa541e83d8ce28930ba1749)), closes [#12](https://github.com/ravithinknyx/test/issues/12) [#13](https://github.com/ravithinknyx/test/issues/13)
+* TEST BREAKING RELEASE (#12) ([9fec9cd](https://github.com/ravithinknyx/test/commit/9fec9cd883ea5f85b87d6ed0eb9ccb0ab716dab7)), closes [#12](https://github.com/ravithinknyx/test/issues/12)
+
+
+### Features
+
+* Added npm publish ([6f5653d](https://github.com/ravithinknyx/test/commit/6f5653d93ed47d01ed97b0ea59311dc78c322c4f))
+* Added npm publish for npm ([3e1604f](https://github.com/ravithinknyx/test/commit/3e1604f2e248b9e7b31b2cdd67e0b2fedfeb5327))
+* Added npm publish for npm test ([7316626](https://github.com/ravithinknyx/test/commit/73166264bfe5cbd2e80abf3c90755987271de696))
+
+
+### BREAKING CHANGES
+
+* TFE MODULE ENHANCEMENT 4
+
+* test breaking change
+* TFE MODULE ENHANCEMENT 5
+
+* chore(release): 4.0.0-develop.1 [skip ci]
+
+# [4.0.0-develop.1](https://github.com/ravithinknyx/test/compare/v3.3.0...v4.0.0-develop.1) (2022-07-29)
+
+* test breaking change ([84fcc85](https://github.com/ravithinknyx/test/commit/84fcc854fb3cf6206b7c60055c2548f8a4c503de))
+* test breaking change ([246d400](https://github.com/ravithinknyx/test/commit/246d400ca25cd5a2956b316c2972af6e3e0e517d))
+
+### BREAKING CHANGES
+
+* TFE MODULE ENHANCEMENT 5
+* TFE MODULE ENHANCEMENT 4
+
+Co-authored-by: root <root@ip-172-31-0-15.eu-west-2.compute.internal>
+Co-authored-by: semantic-release-bot <semantic-release-bot@martynus.net>
+
+Co-authored-by: root <root@ip-172-31-0-15.eu-west-2.compute.internal>
+Co-authored-by: semantic-release-bot <semantic-release-bot@martynus.net>
+* TFE MODULE ENHANCEMENT 4
+
+* test breaking change
+* TFE MODULE ENHANCEMENT 5
+
+* chore(release): 4.0.0-develop.1 [skip ci]
+
+# [4.0.0-develop.1](https://github.com/ravithinknyx/test/compare/v3.3.0...v4.0.0-develop.1) (2022-07-29)
+
+* test breaking change ([84fcc85](https://github.com/ravithinknyx/test/commit/84fcc854fb3cf6206b7c60055c2548f8a4c503de))
+* test breaking change ([246d400](https://github.com/ravithinknyx/test/commit/246d400ca25cd5a2956b316c2972af6e3e0e517d))
+
+### BREAKING CHANGES
+
+* TFE MODULE ENHANCEMENT 5
+* TFE MODULE ENHANCEMENT 4
+
+Co-authored-by: root <root@ip-172-31-0-15.eu-west-2.compute.internal>
+Co-authored-by: semantic-release-bot <semantic-release-bot@martynus.net>
+
 # [4.0.0-develop.1](https://github.com/ravithinknyx/test/compare/v3.3.0...v4.0.0-develop.1) (2022-07-29)
 
 

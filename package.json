@@ -1,6 +1,6 @@
 {
   "name": "test",
-  "version": "0.1.0",
+  "version": "4.0.0-develop.2",
   "devDependencies": {
     "@semantic-release/changelog": "^6.0.1",
     "@semantic-release/git": "^10.0.1",
