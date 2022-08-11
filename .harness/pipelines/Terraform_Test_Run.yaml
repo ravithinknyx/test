@@ -1,0 +1,39 @@
+pipeline:
+    name: Terraform Test Run
+    identifier: Terraform_Test_Run
+    projectIdentifier: Infra
+    orgIdentifier: default
+    description: terraform run test with Harness
+    tags: {}
+    stages:
+        - stage:
+              name: Lint
+              identifier: Lint
+              description: ""
+              type: Deployment
+              spec:
+                  serviceConfig:
+                      serviceRef: TFLINT
+                      serviceDefinition:
+                          spec:
+                              variables: []
+                          type: Kubernetes
+                  infrastructure:
+                      environmentRef: DEV
+                      infrastructureDefinition:
+                          type: KubernetesDirect
+                          spec:
+                              connectorRef: account.danfstatestcluster
+                              namespace: harness-delegate-ng-statest
+                              releaseName: release-<+INFRA_KEY>
+                      allowSimultaneousDeployments: false
+                  execution:
+                      steps: []
+                      rollbackSteps: []
+              tags: {}
+              failureStrategies:
+                  - onFailure:
+                        errors:
+                            - AllErrors
+                        action:
+                            type: StageRollback
