@@ -1,0 +1,22 @@
+connector:
+  name: ravi-github
+  identifier: ravigithub
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: Infra
+  type: Github
+  spec:
+    url: https://github.com/ravithinknyx/test
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: ravithinknyx
+          tokenRef: ravi
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: ravi
+    executeOnDelegate: false
+    type: Repo
