@@ -61,3 +61,6 @@ pipeline:
                     repo: rs2k/harness
                     tags:
                       - v1.0.0
+                    dockerfile: Dockerfile
+                    optimize: false
+                    runAsUser: "0"
