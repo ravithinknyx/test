@@ -42,3 +42,25 @@ pipeline:
                       echo "Test"
         when:
           pipelineStatus: All
+    - stage:
+        name: Trivy
+        identifier: Trivy
+        description: Run Trivy Scan
+        type: CI
+        spec:
+          cloneCodebase: false
+          infrastructure:
+            useFromStage: Precheck
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: Trivy
+                  identifier: Trivy
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: aquasec/trivy:latest
+                    shell: Bash
+                    command: trivy config --severity HIGH,CRITICAL --exit-code 1 ./aws/ec2/examples
+                  description: Run Trivy Scan on Repo
+        variables: []
