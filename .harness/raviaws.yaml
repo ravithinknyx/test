@@ -1,0 +1,15 @@
+connector:
+  name: ravi-aws
+  identifier: raviaws
+  description: AWS TEST
+  orgIdentifier: default
+  projectIdentifier: Infra
+  type: Aws
+  spec:
+    credential:
+      type: ManualConfig
+      spec:
+        accessKey: AKIAYCJCXWWAUANGBSUR
+        secretKeyRef: raviaws
+    delegateSelectors:
+    - danfstatest-delegate
