@@ -41,13 +41,3 @@ pipeline:
 
                       trivy config --severity HIGH,CRITICAL --exit-code 0 .
                   description: scan docker file
-              - step:
-                  type: BuildAndPushDockerRegistry
-                  name: docker-trivy
-                  identifier: dockertrivy
-                  spec:
-                    connectorRef: dockerravi
-                    repo: rs2k/harness
-                    tags:
-                      - latest
-                    dockerfile: Dockerfile
