@@ -1,0 +1,18 @@
+connector:
+  name: trivy docker image
+  identifier: trivy_docker_image
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: Infra
+  type: Github
+  spec:
+    url: https://github.com/ravithinknyx/trivy.git
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: ravithinknyx
+          tokenRef: ravi
+    executeOnDelegate: false
+    type: Repo
