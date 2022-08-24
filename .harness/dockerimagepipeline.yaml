@@ -47,7 +47,7 @@ pipeline:
                   identifier: dockertrivy
                   spec:
                     connectorRef: dockerravi
-                    repo: rs2k / harness
+                    repo: rs2k/harness
                     tags:
                       - latest
                     dockerfile: Dockerfile
