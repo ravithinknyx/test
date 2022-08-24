@@ -60,10 +60,11 @@ pipeline:
                   spec:
                     connectorRef: account.harnessImage
                     image: aquasec/trivy:latest
-                    shell: Bash
+                    shell: Sh
                     command: |-
                       #!/bin/bash
 
                       trivy config --severity HIGH,CRITICAL --exit-code 1 ./aws/ec2/examples
                   description: Run Trivy Scan on Repo
+                  failureStrategies: []
         variables: []
