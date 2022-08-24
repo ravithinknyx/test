@@ -1,0 +1,17 @@
+connector:
+  name: docker-ravi
+  identifier: dockerravi
+  description: ""
+  orgIdentifier: default
+  projectIdentifier: Infra
+  type: DockerRegistry
+  spec:
+    dockerRegistryUrl: https://registry.hub.docker.com/v2/
+    providerType: DockerHub
+    auth:
+      type: UsernamePassword
+      spec:
+        username: rs2k
+        passwordRef: ravidocker
+    delegateSelectors:
+    - danfstatest-delegate
