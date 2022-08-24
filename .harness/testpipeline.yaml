@@ -64,7 +64,6 @@ pipeline:
                     command: |-
                       #!/bin/sh
                       ls -al
-                      cd aws/ec2/examples
                       trivy config --severity HIGH,CRITICAL --exit-code 1 .
                   description: Run Trivy Scan on Repo
                   failureStrategies: []
