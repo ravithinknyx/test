@@ -1,0 +1,44 @@
+pipeline:
+  name: test-pipeline
+  identifier: testpipeline
+  projectIdentifier: Infra
+  orgIdentifier: default
+  description: First Pipeline
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: raviconnector
+        build: <+input>
+  stages:
+    - stage:
+        name: Pre-check
+        identifier: Precheck
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          infrastructure:
+            type: KubernetesDirect
+            spec:
+              connectorRef: account.danfstatestcluster
+              namespace: harness-delegate-ng-statest
+              automountServiceAccountToken: true
+              nodeSelector: {}
+              os: Linux
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: "test "
+                  identifier: test
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: maven:3.5.2-jdk-8-alpine
+                    shell: Bash
+                    command: |-
+                      #!/bin/bash
+
+                      echo "Test"
+        when:
+          pipelineStatus: All
