@@ -50,3 +50,4 @@ pipeline:
                     repo: rs2k / harness
                     tags:
                       - latest
+                    dockerfile: Dockerfile
