@@ -1,0 +1,52 @@
+pipeline:
+  name: docker-image-pipeline
+  identifier: dockerimagepipeline
+  projectIdentifier: Infra
+  orgIdentifier: default
+  description: docker image test
+  tags: {}
+  properties:
+    ci:
+      codebase:
+        connectorRef: trivy_docker_image
+        build: <+input>
+  stages:
+    - stage:
+        name: Docker File Scan
+        identifier: Docker_File_Scan
+        description: ""
+        type: CI
+        spec:
+          cloneCodebase: true
+          infrastructure:
+            type: KubernetesDirect
+            spec:
+              connectorRef: account.danfstatestcluster
+              namespace: harness-delegate-ng-statest
+              automountServiceAccountToken: true
+              nodeSelector: {}
+              os: Linux
+          execution:
+            steps:
+              - step:
+                  type: Run
+                  name: trivy dockerfile scan
+                  identifier: trivy_dockerfile_scan
+                  spec:
+                    connectorRef: account.harnessImage
+                    image: aquasec/trivy:latest
+                    shell: Sh
+                    command: |-
+                      #! /bin/sh
+
+                      trivy config --severity HIGH,CRITICAL --exit-code 1 .
+                  description: scan docker file
+              - step:
+                  type: BuildAndPushDockerRegistry
+                  name: docker-trivy
+                  identifier: dockertrivy
+                  spec:
+                    connectorRef: dockerravi
+                    repo: rs2k / harness
+                    tags:
+                      - v0.0.1
