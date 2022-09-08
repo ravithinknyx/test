@@ -6,7 +6,7 @@ connector:
   projectIdentifier: Infra
   type: Github
   spec:
-    url: https://github.com/ravithinknyx/terraform-aws-ssc.git
+    url: https://github.com/ravithinknyx/
     validationRepo: terraform-aws-ssc
     authentication:
       type: Http
@@ -15,5 +15,9 @@ connector:
         spec:
           username: ravithinknyx
           tokenRef: ravi
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: ravi
     executeOnDelegate: false
-    type: Repo
+    type: Account
